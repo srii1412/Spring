@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+       
+       <bean id="car" class="Bean.Car">
+       <property name="num" value="112"/>
+       <property name="brand" value="BMW"/>
+       <property name="price" value="480000"/>
+       <property name="eng" ref="Engine"/>
+       </bean>
+       
+       <bean id="Engine" class="Bean.Engine">
+       <property name="work" value="Hard"/>
+       <property name="capacity" value="143"/>
+       
+       
+       </bean>
+       </beans>
+       
