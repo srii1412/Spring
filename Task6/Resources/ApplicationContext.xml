@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+      <bean id="m" class="task6.Mobile" autowire="byType">
+     <property name="price" value="100000"/>
+     <property name="name" value="iphone pro max"/>
+     </bean>
+        
+        
+       <bean id="b" class="task6.Batery">
+       <property name="capacity" value="5000"/>
+       </bean>
+</beans>
