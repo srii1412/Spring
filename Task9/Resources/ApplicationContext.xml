@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="library" class="task9.Library">
+
+        <!-- List Injection -->
+        <property name="books">
+            <list>
+                <value>Java Programming</value>
+                <value>Spring Framework</value>
+                <value>Data Structures</value>
+            </list>
+        </property>
+
+        <!-- Map Injection -->
+        <property name="authors">
+            <map>
+                <entry key="Java Programming" value="James Gosling"/>
+                <entry key="Spring Framework" value="Rod Johnson"/>
+                <entry key="Data Structures" value="Mark Allen Weiss"/>
+            </map>
+        </property>
+
+    </bean>
+
+</beans>
